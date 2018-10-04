@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dominio Total del Mundo</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var nombre = prompt("Introdusca su Nombre");
+		var nombrei = nombre.substr(0,1).toUpperCase();
+		var nombrer = nombre.substring(1,nombre.length).toLowerCase();
+		var nota = parseInt(prompt("Introdusca la Primera Nota"));
+		var nota2 = parseFloat(prompt("Introdusca la Segunda Nota"));
+		var nota_final = (nota + nota2)/2;
+
+		console.log("Su nombre es: " + nombrei + nombrer);
+
+		if (isNaN(nota) || isNaN(nota2)) {
+			alert("No Seas Bruto Chico");
+			console.log("Bienvenido a la Tasca Gando")}
+			else {
+				console.log("Su Primera Nota es: " + nota);
+				console.log("Su Segunda Nota es: " + nota2);
+				console.log("Su Nota Final es: " + nota_final);}
+	</script>
+
+</body>
+</html>
