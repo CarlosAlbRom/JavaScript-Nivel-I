@@ -1,0 +1,4 @@
+function Jojo()
+{
+	alert("Jojojojojo")
+}
