@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			alert("antes del texto")
+		</script>
+		Antes del escript con prompt <br>
+		<script>
+			var nombre = prompt("Diga su nombre:");
+			console.log(nombre)
+			// si el usuario hace click en el boton
+			// cancelar, prompt retorna null
+			// si el usuario hace click en el boton
+			// aceptar sin escribir nada, prompt retorna 
+			// una cadena vacía
+			if (nombre==null || nombre =="")
+				alert("Debe escribir un valor y aceptar");
+			else	
+				if (isNaN(nombre))
+					alert("No es numero");
+				else
+					alert("Es un número");
+		</script>
+		luego del script
+	</body>
+</html>
