@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Clase4_1</title>
+</head>
+<body>
+    <a href="#" onclick="info()">Información</a> |
+    <a href="#" onclick="ir()">Ir a</a> |
+    <a href="#" onclick="window.print()">Imprimir</a> |
+    <a href="#" onclick="openeo()">La Verdad</a> |
+    <a href="#" onclick="openeo2()">El Ideal</a> |
+    <input 
+        type="button" 
+        onclick="window.print()" 
+        value="Imprimir">
+    <script>
+        function info(){
+            alert("Ancho de la pantalla: "+window.screen.width+
+            "\nAlto de la pantalla: "+window.screen.height+
+            "\nEn línea: "+window.navigator.onLine+
+            "\nIdioma del navegador: "+window.navigator.language+
+            "\nSistema Operativo: "+navigator.platform);
+        }
+        function ir(){
+            web = prompt("A cual página desea ir ?");
+            if(!(web == "" || web == null))
+                window.location = "http://"+web+".com";
+        }
+        function openeo()
+        {
+            window.open("verdad.html","","width="+screen.availWidth+", height="+screen.availHeight)
+        }
+        function openeo2()
+        {
+            window.open("NuevishArchiv.html","","width="+screen.availWidth+", height="+(screen.availHeight-100))
+        }
+    </script>
+</body>
+</html>

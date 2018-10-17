@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="setInterval(TheFirst(),1)" onkeypress="TheRealOne()" onclick="TheRealOne()">
+    <script>
+        var t
+        function TheFirst()
+        {
+            t=setTimeout(cerrarpaginish,5000);
+            cerrarpaginish
+        }
+        function TheRealOne()
+        {   
+            window.clearTimeout(t)
+            t=setTimeout(cerrarpaginish,10000)
+        }
+        function cerrarpaginish()
+        {
+            alert("Se te Acabo el Tiempo")
+            if (confirm("Quieres Cerrar la Pagina?"))
+            {
+                window.close()
+            }else
+            {
+                alert("Se Añadira Mas Tiempo")
+            }
+            
+        }    
+    </script>
+</body>
+</html>
